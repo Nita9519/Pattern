@@ -1,0 +1,42 @@
+1.#!/bin/bash -x
+
+read -p "Enter string -  " userInput
+
+pattern="^[A-Z]{1}[a-zA-Z]*$";
+password_pattern="(?=^.{8,}$)((?=.\d)|(?=.\W+))(?![.\n])(?=.[A-Z])(?=.[a-z]).*$";
+
+if [[ $userInput =~ $ password_pattern]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
+
+2.
+Pattern – 
+#!/bin/bash
+ -x read 
+-p "Enter string - " userInput pattern="^[A-Z]{1}[a-zA-Z]*$";
+ email_pattern="^[a-zA-Z]{5}[0-9a-zA-Z\.\_\-]*\@[a-z]*\.(com|co|in)$"; 
+ if [[ $userInput =~ $email_pattern ]]
+ then
+ echo "valid" else echo "invalid"
+ fi
+
+
+
+
+
+
+
+
+3.
+Pattern – 
+#!/bin/bash
+ -x read -p "Enter string - " userInput pattern="^[A-Z]{1}[a-zA-Z]*$";
+ mobile_number_pattern="^(\+91)?[6-9]{1}[0-9]{9}$";
+ if [[ $userInput =~ $ mobile_number_pattern]] 
+then
+ echo "valid" else echo "invalid"
+ fi
+
